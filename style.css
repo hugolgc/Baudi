@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: url(https://cdn.dribbble.com/users/13449/screenshots/16722436/media/378398a6d9448f071206178da94bbf5a.png) center / cover;
+  opacity: .8;
+}
+
+header {
+  padding: 48px 0;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.icon {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2, a.icon {
+  color: #d2d0c6;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding: 0 24px;
+}
+
+li a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h1, li a {
+  color: #39182b;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+
+
+h1, h2 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+}
+
+a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 154px;
+  margin: 28px auto;
+  background-color: #d2d0c6;
+  border: 6px solid rgba(255, 255, 255, .1);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #39182b;
+}
+
+@media(max-width: 700px) {
+  nav {
+    justify-content: flex-start;
+  }
+
+  ul {
+    display: none;
+  }
+
+  h1, h2 {
+    font-size: 48px;
+  }
+
+  a.button {
+    width: 128px;
+    height: 48px;
+    margin: 24px auto;
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 500px) {
+  h1, h2 {
+    font-size: 32px;
+  }
+
+  a.button {
+    width: 112px;
+    height: 42px;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+}
